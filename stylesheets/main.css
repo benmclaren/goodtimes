@@ -1,10 +1,20 @@
 @import url("fonts.css");
+@import url("header.css");
+@import url("buttons.css");
+
+
 
 body {
   font-family: 'HK-Grotesk-Medium', sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #414141;
+  background-image: url('../assets/images/background.jpg');
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+
 }
 
 a {
@@ -14,4 +24,14 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.heading {
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+  font-size: 110px;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  line-height: 1;
 }

@@ -1,0 +1,10 @@
+.button {
+  display: inline-block;
+  background-color: #ff3c15;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  padding: 24px 72px;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+}
