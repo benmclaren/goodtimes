@@ -13,3 +13,10 @@ inView('.header')
   .on('enter', el => desktopHeader.classList.remove("visible"))
 
   .on('exit', el => desktopHeader.classList.add("visible"))
+
+
+// tilt js on all images
+  VanillaTilt.init(document.querySelectorAll(".image"), {
+  		max: 25,
+  		speed: 400
+  	});
