@@ -113,6 +113,7 @@ form.addEventListener('submit', function(event) {
     // when stripe returns back...
     if (result.error) {
       // invalid card format
+      form.classList.remove('processing')
       showErrors(result.error.message)
     } else {
       // pass my payment method to the function below
@@ -137,8 +138,8 @@ const stripeHandle = function(paymentMethod) {
         email: emailEl.value,
         // not a token but a payment method now!
         stripe_payment_method: paymentMethod.id
-        // IF you wanna put their own stripe secret key in,
-        // USUALLY DONT DO THIS, comment next line if you wanna test
+        // IF you wanna put your own stripe secret key in,
+        // USUALLY DONT DO THIS, uncomment next line if you wanna test
         // stripe_secret_key: "sk_test_asdf"
         // BUT DONT PUT YOUR SECRET KEY IN JS ANYWHERE
         // BECAUSE PEOPLE WILL STEAL YO MONEY!
